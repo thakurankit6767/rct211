@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "buy-milk",
-      "status": "false"
+      "val": "false"
     }
   ]
 }
