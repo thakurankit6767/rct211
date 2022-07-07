@@ -1,9 +1,11 @@
 import React from "react";
 
+
+
 const BookCard = ({ item }) => {
   return (
     <div
-      style={{ border: "1px solid", padding: "1%", boxSizing: "border-box" }}
+      style={{ border: "5px solid green", padding: "1%", boxSizing: "border-box" }}
     >
       <img src={item.cover_photo} alt="image" width="100%" />
       <p style={{ margin: 0 }}>

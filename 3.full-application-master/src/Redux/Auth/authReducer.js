@@ -21,7 +21,6 @@ export const authReducer = (state = initialState, { type, payload }) => {
       return { ...state, isLoading: false, token: payload, isAuth: true };
     }
     case GET_LOGIN_ERROR: {
-
       return { ...state, isError: true, isAuth: false, token: "" };
     }
     case LOGOUT: {

@@ -7,6 +7,10 @@ import {
   UPDATE_BOOK_ERROR,
   UPDATE_BOOK_REQUEST,
   UPDATE_BOOK_SUCCESS,
+
+  UPDATE_SHOE_COUNT_REQUEST,
+  UPDATE_SHOE_COUNT_SUCCESS,
+  UPDATE_SHOE_COUNT_FAILURE,
 } from "./actionTypes";
 
 const initialState = {
@@ -45,6 +49,17 @@ export const reducer = (state = initialState, { type, payload }) => {
     case UPDATE_BOOK_ERROR: {
       return { ...state };
     }
+
+
+
+
+
+    case UPDATE_SHOE_COUNT_REQUEST : 
+    return {...state,isLoading : payload};
+  case UPDATE_SHOE_COUNT_SUCCESS : 
+    return state;
+  case UPDATE_SHOE_COUNT_FAILURE : 
+    return {...state ,isError : payload};
 
     default: {
       return state;

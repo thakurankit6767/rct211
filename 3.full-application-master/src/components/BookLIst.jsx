@@ -5,9 +5,10 @@ import { getBooks } from "../Redux/action";
 import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams, useLocation, Link } from "react-router-dom";
 
+import { inc_count, inc_count_fail, inc_count_req } from "../Redux/action";
 const BookLIst = () => {
   const data = useSelector((state) => state.reducer.books);
-  console.log("books",data)
+  console.log("books", data);
   const [searchParams] = useSearchParams();
 
   const location = useLocation();
@@ -47,6 +48,23 @@ const BookLIst = () => {
           <BookCard item={item} />
         </Link>
       ))}
+
+      {/* <div>
+        In Cart:
+        <div data-cy="shoe-count">{item.cart_quantity}</div>
+        <button
+          data-cy="increment-shoe-count-button"
+          onClick={() => handlecount(1)}
+        >
+          +
+        </button>
+        <button
+          data-cy="decrement-shoe-count-button"
+          onClick={() => handlecount(-1)}
+        >
+          -
+        </button>
+      </div> */}
     </div>
   );
 };

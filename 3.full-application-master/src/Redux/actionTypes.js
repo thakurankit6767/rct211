@@ -6,3 +6,6 @@ export const UPDATE_BOOK_REQUEST = "update/book/request";
 export const UPDATE_BOOK_SUCCESS = "update/book/success";
 export const UPDATE_BOOK_ERROR = "update/book/error";
 
+export const UPDATE_SHOE_COUNT_REQUEST = "updateShoeCount/request";
+export const UPDATE_SHOE_COUNT_SUCCESS = "updateShoeCount/success";
+export const UPDATE_SHOE_COUNT_FAILURE = "updateShoeCount/failure";
