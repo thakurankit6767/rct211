@@ -5,18 +5,18 @@ import Counter from "./Components/Counter";
 function App() {
   const [counter, setCounter] = useState(0);
 
-  const handleAdd = () => {
+  const handlePlus = () => {
     setCounter(counter + 5);
   };
 
-  const handleReduce = () => {
+  const handleMinus = () => {
     setCounter(counter - 5);
   };
   return (
     <div className="App">
       <h1 data-testid="counter">{counter}</h1>
-      <Counter data-testid="btn" onClickAdd={() => handleAdd()}>ADD</Counter>
-      <Counter data-testid="btn" onClickReduce={() => handleReduce()}>REDUCE</Counter>
+      <Counter data-testid="btn" onClickAdd={() => handlePlus()}>ADD</Counter>
+      <Counter data-testid="btn" onClickReduce={() => handleMinus()}>REDUCE</Counter>
     </div>
   );
 }
